@@ -1,4 +1,5 @@
 import days.Day01
+import days.Day02
 import utils.ParseArgs
 
 fun main(args: Array<String>) {
@@ -9,6 +10,7 @@ fun main(args: Array<String>) {
     val (day, part) = ParseArgs().dayAndPart(args)
     when (day) {
         1 -> Day01().selectPart(part)
+        2 -> Day02().selectPart(part)
         else -> throw Exception("No code for the selected day is available yet")
     }
 }
