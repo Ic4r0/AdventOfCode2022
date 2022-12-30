@@ -1,7 +1,4 @@
-import days.Day01
-import days.Day02
-import days.Day03
-import days.Day04
+import days.*
 import utils.ParseArgs
 
 fun main(args: Array<String>) {
@@ -15,6 +12,7 @@ fun main(args: Array<String>) {
         2 -> Day02().selectPart(part)
         3 -> Day03().selectPart(part)
         4 -> Day04().selectPart(part)
+        5 -> Day05().selectPart(part)
         else -> throw Exception("No code for the selected day is available yet")
     }
 }
