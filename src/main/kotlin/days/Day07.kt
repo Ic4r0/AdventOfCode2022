@@ -12,9 +12,9 @@ class Day07 {
         }
         for (idx in filteredLines.indices) {
             val line = filteredLines[idx]
-            if (line.contains("cd ..")) {
+            if (line.startsWith("$ cd ..")) {
                 stack.removeLast()
-            } else if (line.contains("cd")) {
+            } else if (line.startsWith("$ cd")) {
                 stack.add(idx)
                 sizes[idx] = 0
             } else {
