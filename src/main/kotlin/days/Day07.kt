@@ -8,7 +8,7 @@ class Day07 {
         val stack: MutableList<Int> = mutableListOf()
         val filteredLines = lines.filter {
             !it.contains("$ ls") &&
-                    !it.contains("dir ")
+            !it.contains("dir ")
         }
         for (idx in filteredLines.indices) {
             val line = filteredLines[idx]
