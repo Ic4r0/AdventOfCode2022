@@ -11,7 +11,6 @@ class GetFiles {
     }
 
     fun multipleIntegerLines(day: Int): List<Int?> {
-        val file = Paths.get("src/main/resources/" + day.toString().padStart(2, '0'))
-        return Files.readAllLines(file).map { it.toIntOrNull() }.toList()
+        return multipleStringLines(day).map { it.toIntOrNull() }.toList()
     }
 }
