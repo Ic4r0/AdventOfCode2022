@@ -14,6 +14,7 @@ fun main(args: Array<String>) {
         4 -> Day04().selectPart(part)
         5 -> Day05().selectPart(part)
         6 -> Day06().selectPart(part)
+        7 -> Day07().selectPart(part)
         else -> throw Exception("No code for the selected day is available yet")
     }
 }
